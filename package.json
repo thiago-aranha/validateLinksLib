@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test_file_validation": "node ./src/cli.js ./files/texto.md --validate",
+    "test_folder_validation": "node ./src/cli.js ./files --validate"
   },
   "repository": {
     "type": "git",
@@ -14,7 +17,11 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alura-cursos/2708-node-lib-md/issues"
+    "url": "https://github.com/thiago-aranha/validateLinksLib/issues"
   },
-  "homepage": "https://github.com/alura-cursos/2708-node-lib-md#readme"
+  "homepage": "https://github.com/thiago-aranha/validateLinksLib#readme",
+  "dependencies": {
+    "chalk": "5.0.1",
+    "yargs": "^17.7.2"
+  }
 }
